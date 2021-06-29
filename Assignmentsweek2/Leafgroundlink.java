@@ -33,8 +33,17 @@ public class Leafgroundlink {
 
 		System.out.println(link);
 
-		int size = driver.findElements(By.tagName("a")).size();
-		System.out.println("Number of links are " + size);
+		//int size = driver.findElements(By.tagName("a")).size();
+		//System.out.println("Number of links are " + size);
+		List<WebElement> links =driver.findElements(By.tagName("a")); 
+		System.out.println("Total Links in this page are : " +links.size());
+		
+		//for (int i=0; i < links.size(); i++) 
+		//		{ To print all the links 
+		//			WebElement l = links.get(i);
+		//			String links = l.getAttribute("href");
+		//			System.out.println(links);
+				}
 
 	}
 
